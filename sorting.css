@@ -1,0 +1,323 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'PT Mono', monospace;
+    background: #F6F6F6;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 57px 0 83px 0;
+}
+
+.search button{
+    width: 64px;
+    height: 32px;
+    background: url(images/search.svg) no-repeat center / 24px #DBDBDB;
+    border: none;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.search{
+    background: #DBDBDB;
+    display: inline-block;
+}
+
+.search input{
+    width: 536px;
+    height: 32px;
+    padding-left: 28px;
+    vertical-align: middle;
+    border: none;
+    background: #DBDBDB;
+    font-size: 20px;
+    font-family: 'PT Mono', monospace;
+}
+
+.search input::placeholder{
+    color: #000;
+}
+
+input:focus{
+    outline: none;
+}
+
+input:focus::placeholder{
+    opacity: 0;
+}
+
+.second{
+    text-align: right;
+}
+
+.by{
+    background: #000;
+    color: #fff;
+    padding: 5px 12px;
+    margin-left: 69px;
+    cursor: pointer;
+}
+
+.by button{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info{
+    max-width: 716px;
+    position: relative;
+}
+
+main nav .active{
+    font-weight: 700;
+}
+
+main nav li{
+    list-style: none;
+    margin-bottom: 27px;
+}
+
+main nav li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+}
+
+main nav li ul{
+    position: absolute;
+    display: inline-block;
+    border-left: #000 solid 1px;
+    margin-left: 15px;
+}
+
+main nav li ul li{
+    position: relative;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+main nav li ul li a{
+    font-size: 15px;
+}
+
+main .list button{
+    background: #000;
+    color: #fff;
+    padding: 9px 70px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'PT Mono', monospace;
+}
+
+.block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.square{
+    width: 270px;
+    height: 270px;
+}
+
+.block .text{
+    max-width: 370px;
+    font-size: 25px;
+    text-align: right;
+    line-height: 28px;
+}
+
+.yel{
+    background: #FFE600;
+}
+
+.green{
+    background: #00C22B;
+}
+
+.blue{
+    background: #004EC2;
+}
+
+.red{
+    background: #C20000;
+}
+
+.black{
+    background: #1E1E1E;
+}
+
+.block .little{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 22px;
+}
+
+h3{
+    font-size: 25px;
+    margin-bottom: 34px;
+    margin-left: 11px;
+    margin-top: 40px;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2:not(:first-child){
+    margin-top: 59px;
+}
+
+.info p{
+    font-size: 20px;
+}
+
+h4{
+    margin: 34px 0 22px 0;
+    font-size: 20px;
+}
+
+.last p{
+    text-align: center;
+    margin-top: 40px;
+    max-width: 541px;
+    margin-bottom: 104px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arrowone{
+    width: 400px;
+    position: absolute;
+    top: -45px;
+    left: 177px;
+}
+
+.arrowtwo{
+    width: 368px;
+    position: absolute;
+    top: 1426px;
+}
+
+.arrowthree{
+    width: 365px;
+    position: absolute;
+    top: 1998px;
+}
+
+.arrowfour{
+    width: 440px;
+    position: absolute;
+    top: 2450px;
+    left: 150px;
+
+}
+
+.arrowfive{
+    width: 365px;
+    position: absolute;
+    top: 3206px;
+}
+
+footer{
+    background-image: linear-gradient(314.03deg, #757575 -11.99%, #000000 93.84%);
+    padding: 98px 149px 79px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer img{
+    width: 209px;
+}
+
+footer a{
+    text-align: right;
+    text-align: right;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu{
+    display: none;
+    width: 50px;
+}
+
+@media(max-width: 1200px){
+    .container{
+        max-width: 95%;
+    }
+}
+
+@media(max-width: 1080px){
+    nav, .list button{
+        display: none;
+    }
+
+    main{
+        justify-content: center;
+    }
+
+    .menu{
+        display: inline-block;
+    }
+
+    .second{
+        display: none;
+    }
+}
+
+@media(max-width: 800px){
+    .arrowone, .arrowtwo, .arrowthree, .arrowfour, .arrowfive{
+        display: none;
+    }
+
+    h2, .block .text{
+        text-align: center;
+    }
+
+    .block{
+        justify-content: center;
+    }
+
+    .square{
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 730px){
+    footer{
+        justify-content: center;
+    }
+
+    footer div{
+        margin-top: 30px;
+    }
+
+    footer a{
+        text-align: center;
+    }
+}

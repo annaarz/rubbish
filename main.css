@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-position: right bottom;
+    background-size: cover;
+    background-image: url("images/background.png");
+    font-family: 'PT Mono';
+    min-height: 100vh;
+    
+}
+.container {
+    max-width: 1141px;
+    margin:auto;
+
+}
+.languages {
+    width: 330px;
+    height: 571px;
+    background-color: #FFFFFF;
+}
+.inside-languages{
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    padding-left: 25px;
+}
+.blocks{
+    display: flex;   
+}
+.flags{
+    padding-bottom: 24px;
+}
+
+.flags a:hover{
+    color: #79844c;
+}
+
+.continue:hover{
+    background-color: #59a21d;
+}
+
+.hungary{
+    padding-bottom: 0px; 
+    
+}
+.flags a{
+    
+    padding-left: 32px;
+    text-decoration: none;
+    color:#000000;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+
+}
+
+.R{
+    margin-left: 65px;
+    margin-top: 79px;
+}
+.text{
+
+    padding-top: 91px;
+    padding-bottom: 34px;
+    text-align: center;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+}
+.textt{
+    padding-top: 91px;
+    padding-bottom: 34px;
+    text-align: center;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF; 
+}
+.textImg{
+    display: flex;
+    max-width: 330px;
+    justify-content: space-evenly
+}
+.globe{
+    padding-top: 55px;
+    padding-left: 15px;
+   
+}
+.russian{
+   width: 330px; 
+   text-align: left;
+  padding: 24px 10px 24px 78px;
+   background: #FFFFFF;
+   border: none;
+   cursor: pointer;
+   font-family: 'PT Mono';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   color: #000000; 
+   position: relative;
+}
+
+.russian::after{
+    content: url(images/arrow0.svg);
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    right: 70px;
+    transform: rotate(0deg);
+    transition: transform 0.8s;
+}
+
+.russian.opened::after{
+    transform: rotate(180deg);
+}
+
+.other-languages{
+    width: 330px; 
+    /* display: none; */
+    height: 0;
+    overflow: hidden;
+     background: #FFFFFF;   
+     border: none;
+     transition: height 0.7s;
+}
+
+.other-languages.visible{
+    display: block;
+    height: 190px;
+}
+
+li{
+    
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+.bottom-none{
+    padding-bottom: 0px;
+}
+.other-languages li{
+    padding: 13px 10px 13px 78px;
+    cursor: pointer;
+    background: #ececec;
+}
+
+.other-languages li:hover{
+    background: #cbcbcb;
+}
+
+.button-first {
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+.arrow0{
+ padding-left: 62px;   
+}
+.continue{
+    display: inline-block;
+    margin-top: 39px;
+    width: 330px; 
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: #9EFF00;
+    text-align: center;
+    text-decoration: none;
+}
+.button-second{
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+.continue-one{
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000; 
+   padding-right: 27px;
+}
+.left-block{
+    margin-right: 43px;
+}
+.right-block {
+    max-width: 340px;
+}
+
+
+
+
+
+@media (max-width: 930px){
+    .container {
+        margin: auto;
+        padding-bottom: 100px;
+       
+    
+    }
+    .blocks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .twoButtons{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .RR{
+        
+        text-align: center;
+        
+    }
+    .R{
+        margin-left: 0;
+    }
+    .textt{
+        color: #000000;
+        font-weight: bold;
+        padding-top: 91px;
+        padding-bottom: 34px;
+        font-family: 'PT Mono';
+        font-style: normal;
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .left-block{
+        margin-right: 0;
+    }
+}
