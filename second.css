@@ -45,7 +45,10 @@ nav {
 .flex-tab {
     width: 61.7%;
 }
-
+.flex-text{
+    display: flex;
+    align-items: center;
+}
 input::placeholder {
     font-family: 'PT Mono';
     font-style: normal;
@@ -116,9 +119,7 @@ main {
 ul {
     list-style: none;
 }
-main nav .active{
-    font-weight: 700;
-}
+
 .login {
     background-color: black;
     padding: 8px 65px;
@@ -163,15 +164,17 @@ li a {
 
 div p {
     position: relative;
-    max-width: 716px;
+    max-width: 307px;
 }
-
-.picture p {
+.image img{
+    padding-left: 80px;
+}
+.text p {
     padding-top: 70px;
     padding-bottom: 113px;
 }
 
-.picture p {
+.text p {
     font-family: 'PT Mono';
     font-style: normal;
     font-weight: 400;
@@ -182,7 +185,7 @@ div p {
     color: #000000;
 }
 
-.picture span {
+.text span {
     font-family: 'PT Mono';
     font-style: normal;
     font-weight: 700;
@@ -241,8 +244,11 @@ footer p {
         margin-left: 30px;
     }
 
-    .picture {
+    .text {
         max-width: 90%;
+    }
+    .image img{
+        padding-left: 60px;
     }
 }
 
@@ -259,7 +265,7 @@ footer p {
         padding-left: 40px;
     }
 
-    .picture {
+    .text {
         max-width: 80%;
     }
 }
@@ -276,9 +282,8 @@ footer p {
         padding-right: 400px;
     }
 
-    ;
 
-    .picture {
+    .text  {
         max-width: 80%;
     }
 }
@@ -298,7 +303,7 @@ footer p {
 
     ;
 
-    .picture {
+    .text {
         max-width: 80%;
     }
 }
@@ -314,11 +319,11 @@ footer p {
         display: none;
     }
 
-    main .picture {
-        margin-left: 200px;
+    main .text {
+        margin-left: 100px;
     }
 
-    header .picture {
+    header .text {
         margin-left: 110px;
     }
 
@@ -327,13 +332,13 @@ footer p {
         padding-left: 40px;
     }
 
-    .picture {
+    .text {
         max-width: 80%;
     }
 }
 
 @media(max-width:1020px) {
-    .picture {
+    .text {
         margin-left: 160px;
     }
 
@@ -343,17 +348,27 @@ footer p {
 }
 
 @media(max-width:970px) {
-    .picture {
+    .text {
         max-width: 80%;
     }
 
-    .picture input {
+    .text input {
         width: 100%;
         max-width: 100%;
     }
 
-    .picture form {
+    .text form {
         width: 80%;
+    }
+    .flex-text{
+        flex-direction: column;
+        justify-content: center;
+    }
+    div p {
+        max-width: 500px;
+    }
+    .image{
+        padding-bottom: 50px;
     }
 }
 @media(max-width:890px){
@@ -365,6 +380,12 @@ footer p {
     .rubish{
         padding-right: 180px;
     }
+    header .text {
+        margin-left: 70px;
+    }
+    main .text {
+        margin-left: 60px;
+    }
 }
 @media(max-width:730px){
     .email{
@@ -372,21 +393,52 @@ footer p {
     }
 }
 @media(max-width:620px){
-header .picture{
-    margin-left: 60px;
+header .text{
+    margin-left: 35px;
 }
-main .picture{
-    margin-left: 150px;
+main .text{
+    margin-left: 50px;
 }
 form{
     margin-right: 20px;
 }
+div p {
+    max-width: 400px;
 }
+}
+@media(max-width:500px){
+    .image{
+        max-width: 80%;
+    }
+    div p {
+        max-width: 275px;
+    }
+    main .text {
+        margin-left: 35px;
+    }
+    div p {
+        max-width: 275px;
+    }
+}
+
+
 @media(max-width:440px){
-header .picture{
+header .text{
     margin-left:30px
 }
-main .picture{
-    margin-left: 120px;
+main .text{
+    margin-left: 33px;
 }
+div p {
+    max-width: 253px;
+}
+
+}
+@media(max-width:400px){
+    .image{
+        display: none;
+    }
+    main .text {
+        margin-left: 45px;
+    }
 }
